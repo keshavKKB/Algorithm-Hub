@@ -9,7 +9,7 @@ class graph{
         unordered_map< int , list< int > > adj;
         void addEdges(int edge1, int edge2, int direction){
             adj[edge1].push_back(edge2);
-            if(direction == 0){
+            if(direction == 0){         // if graph is undirected
                 adj[edge2].push_back(edge1);
             }
         }
